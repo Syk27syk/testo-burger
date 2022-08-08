@@ -1,4 +1,4 @@
-const nodemailer = require ("nodemailer");
+const nodemailer = require('nodemailer');
 
 exports.handler = async function (event, context) {
   const body = JSON.parse(event.body);
@@ -6,30 +6,30 @@ exports.handler = async function (event, context) {
   const orders = body.orders;
 
   let total = 0;
-  let emailcontent = "We have received a new order: \n\n";
+  let emailContent = 'We have received a new order: \n\n';
 
-  orders.forEach((order => {
+  // eslint-disable-next-line no-unused-expressions
+  orders.forEach((order) => {
     emailContent = emailContent + `${order.name} - ${order.quantity} pcs - ${order.price * order.quantity}\n`;
     total = total + (order.price * order.quantity);
-    }),
-  
+  })
   emailContent = emailContent + `\n Total Amount: ${total.toFixed(2)}`;
 
   const email = {
-      from: 'Shiyun.khoo@gmail.com',
-      to: customerEmail,
-      subject: "New Order Received",
-      text: emailContent,
+    from: 'Shiyun.khoo@gmail.com',
+    to: customerEmail,
+    subject: 'New Order Received',
+    text: emailContent,
   };
 
   const mailer = nodemailer.createTransport({
-      host: 'smtp.sendgrid.net',
-      port: 465,
-      secure: true,
-      auth: {
-        user: 'apiKey',
-        pass: process.env.sendgridApiKey
-      }
+    host: 'smtp.sendgrid.net',
+    port: 465,
+    secure: true,
+    auth: {
+      user: 'apiKey',
+      pass: process.env.sendgridApiKey
+    }
   });
 
   try {
@@ -37,11 +37,10 @@ exports.handler = async function (event, context) {
     return {
       statusCode: 200,
       body: JSON.stringify({
-        message: "Email sent successfully",
+        message: 'Email sent successfully',
       }),
     };
-  }
-  catch (error) {
+  } catch (error) {
     console.log('Error sending email', error);
   }
 };
