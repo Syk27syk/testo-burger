@@ -77,11 +77,12 @@ export default {
       this.$store.commit('removeItem', name);
     },
     submitOrder() {
+      console.log('submit order');
       this.$axios
         .post('/netlify/functions/email', {
           email: document.getElementById('email').value,
           orders: this.$store.state.orders,
-          total: this.total
+
         })
         .then(function (response) {
           alert('Your order has been submitted');
