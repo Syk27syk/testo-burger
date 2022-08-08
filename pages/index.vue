@@ -250,7 +250,7 @@
       -->
       <div id="menu-feature" class="pb-5 bg-gray-100">
         <h3 class="uppercase text-5xl font-oswald font-semibold text-red-500 text-center pt-20 pb-2">
-          <NuxtLink to="/menutest">Wide Selections</NuxtLink>
+          <NuxtLink to="/menu">Wide Selections</NuxtLink>
         </h3>
         <p class="text-gray-000 text-opacity-80 font-light text-center text-lg tracking-snug pt-3 pb-2">
           Besides burgers, we also have a large range of item sincluding sandwiches, wraps, panini, soups, salads and more.
