@@ -6,11 +6,11 @@ const serviceAccount = JSON.parse(process.env.firebaseCredential);
 exports.handler = async function (event, context) {
   const user = context.clientContext.user;
 
-  if(user.email != Shiyun.khoo@gmail.com) {
+  if (user.email !== 'Shiyun.khoo@gmail.com') {
     return {
       statusCode: 401,
       body: JSON.stringify({
-        message: "You are not allowed to retrieve orders",
+        message: 'You are not allowed to retrieve orders',
       }),
     }
   };

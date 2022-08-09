@@ -54,13 +54,10 @@ export default {
   data() {
     return {
       orders: [],
-      /*
       user: {}
-      */
     };
   },
 
-  /*
   head() {
     return {
       script: [
@@ -70,14 +67,7 @@ export default {
       ]
     }
   },
-  */
-  mounted() {
-    this.$axios.get('/.netlify/functions/readorders').then(
-      (response) => {
-        this.orders = response.data;
-      });
-  },
-  /*
+
   mounted() {
     this.user = window.netlifyIdentity.currentUser();
     if (this.user) {
@@ -109,6 +99,5 @@ export default {
       this.orders = [];
     }
   }
-  */
 }
 </script>
