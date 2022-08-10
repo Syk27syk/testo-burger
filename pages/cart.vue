@@ -91,6 +91,9 @@ export default {
         email: document.getElementById('email').value,
         orders: this.$store.state.orders,
       });
+      this.$axios.post('netlify/functions/stripe', {
+        orders: this.$store.state.orders,
+      });
     },
   },
 };
