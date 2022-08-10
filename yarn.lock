@@ -5201,6 +5201,13 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
+fauna@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/fauna/-/fauna-0.4.1.tgz#2a0749471dcf9c020bd6fe9d0cb4927af4af66ff"
+  integrity sha512-K7PhWswxDs7RhtFpWGSzQ2YonY1wNmAnWOYPcBQLoLi8SR9N760jyB07sZlglA9Vx0hSqtdSk00Vju9SSulcbw==
+  dependencies:
+    xml "^1.0.1"
+
 faye-websocket@0.11.3:
   version "0.11.3"
   resolved "https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.11.3.tgz"
@@ -11398,6 +11405,11 @@ xdg-basedir@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/xdg-basedir/-/xdg-basedir-4.0.0.tgz"
   integrity sha512-PSNhEJDejZYV7h50BohL09Er9VaIefr2LMAf3OEmpCkjOi34eYyQYAXUTjEQtZJTKcF0E2UKTh+osDLsgNim9Q==
+
+xml@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
+  integrity sha512-huCv9IH9Tcf95zuYCsQraZtWnJvBtLVE0QHMOs8bWyZAFZNDcYjsPq1nEx8jKA9y+Beo9v+7OBPRisQTjinQMw==
 
 xtend@^4.0.0, xtend@^4.0.2, xtend@~4.0.1:
   version "4.0.2"
