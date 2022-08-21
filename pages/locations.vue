@@ -7,8 +7,25 @@
             </h1>
         </div>
         <body class="p-10 bg-slate-100">
-            <p class="font-bold"> Headquarters </p>
-            <p class="font-bold"> America </p>
+            <div id="search" class="bg-[url('/')]">
+                <img src="" alt="find-us" class="" />
+                <div>
+                    <h4>Enter Location</h4>
+                    <p> search bar </p>
+                    <button>Search</button>
+                </div>
+                <NuxtLink to="" class="">View all restaurants</NuxtLink>
+            </div>
+            <div class="font-bold">
+                <h3>Headquarters</h3>
+            </div>
+            <div class="font-bold">
+                <h3>America</h3>
+                <p>lorem ipsum</p>
+                <div>
+                    <h5>United States</h5>
+                </div>
+            </div>
             <p class="font-bold"> Asia Pacific </p>
             <p class="font-bold"> Europe </p>
             <p class="font-bold"> Australasia </p>
