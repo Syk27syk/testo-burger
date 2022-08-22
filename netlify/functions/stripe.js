@@ -17,6 +17,7 @@ exports.handler = async function (event, context) {
   });
 
   // store the Netlify and Stripe IDs in Fauna
+  /*
   await faunaFetch({
     query: `
     mutation ($netlifyID: ID!, $stripeID: ID!) {
@@ -41,6 +42,7 @@ exports.handler = async function (event, context) {
     }),
   };
 };
+*/
 
 /*
 const stripe = require('stripe')(process.env.stripeSecretApiKey);
